@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: rgba(255, 165, 0, 0.8); /* Fondo naranja tenue */
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 85%; /* Ajusta el ancho según necesites */
+    margin: 20px auto;
+    text-align: left; /* El contenido interno se alinea a la izquierda */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.titulo {
+    color: orange;
+    font-weight: bold;
+    margin: 0;
+}
+
+.perfil h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center; /* Centra el nombre del profesor */
+}
+
+.alumno-container h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center; /* Centra el nombre del alumno */
+}
+
+.seleccion, .horario {
+    margin-bottom: 20px;
+    text-align: center; /* Centra las etiquetas e inputs */
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    color: #ff9800; /* Texto naranja */
+    margin-bottom: 5px;
+}
+
+input[type="date"],
+input[type="time"] {
+    width: 60%; /* Ancho similar al input de inicio de sesión */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.horario {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos */
+    gap: 15px;
+}
+
+.sesion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Mayor espacio entre los botones */
+    margin-top: 20px;
+}
+
+.sesion span {
+    font-weight: bold;
+    font-size: 1.1em; /* Un poco más grande */
+}
+
+.btn-sesion {
+    padding: 10px 20px; /* Más padding */
+    border: none;
+    cursor: pointer;
+    font-size: 1em; /* Un poco más grande */
+    border-radius: 10px;
+}
+
+#sesion-si {
+    background-color: green;
+    color: white;
+}
+
+#sesion-no {
+    background-color: red;
+    color: white;
+}
+
+.btn-primario {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primario:hover {
+    background-color: #e68900;
+}
+
+.btn-secundario {
+    background-color: #ccc;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-secundario:hover {
+    background-color: #bbb;
+}
+
+.botones-abajo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; /* Más espacio */
+}
+
+#cerrar-sesion {
+    margin-right: 10px;
+    background-color: #ff9800; /* Botón naranja */
+    color: white;
+    font-weight: bold;
+}
+
+#cerrar-sesion:hover {
+    background-color: #e68900;
+}

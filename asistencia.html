@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistencia</title>
+    <link rel="stylesheet" href="css/asistencia.css">
+</head>
+<body>
+<div class="card">
+    <header>
+        <h1 class="titulo">CONTROL 12</h1>
+        <button id="cerrar-sesion" class="btn-secundario btn-naranja">Cerrar Sesión</button>
+    </header>
+</div>
+
+<div class="card">
+    <div class="perfil">
+        <h2>Profesor: Johanna Doe</h2>
+    </div>
+</div>
+
+<div class="card">
+    <div class="alumno-container">
+        <div class="alumno">
+            <h2>Alumno: John Doe</h2>
+        </div>
+    </div>
+
+    <div class="seleccion">
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha">
+    </div>
+
+    <div class="horario">
+        <label for="hora-inicio">Hora de inicio:</label>
+        <input type="time" id="hora-inicio">
+
+        <label for="hora-fin">Hora de fin:</label>
+        <input type="time" id="hora-fin">
+    </div>
+
+    <div class="sesion">
+        <span>¿Es una sesión?</span>
+        <button id="sesion-si" class="btn-sesion">Sí</button>
+        <button id="sesion-no" class="btn-sesion">No</button>
+    </div>
+</div>
+
+<div class="card botones-abajo">
+    <button class="btn-secundario btn-naranja" onclick="window.history.back()">Atrás</button>
+    <button id="guardar-btn" class="btn-primario">Guardar Asistencia</button>
+</div>
+
+<script src="js/asistencia.js"></script>
+</body>
+</html>

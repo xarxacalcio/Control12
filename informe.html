@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe de Asistencia</title>
+    <link rel="stylesheet" href="css/informe.css">
+</head>
+<body>
+
+<div class="card">
+    <header>
+        <h1 class="titulo">CONTROL 12</h1>
+        <button id="cerrar-sesion" class="btn-secundario btn-naranja">Cerrar Sesión</button>
+    </header>
+</div>
+
+<div class="card">
+    <div class="perfil">
+        <h2>Profesor: Johanna Doe</h2>
+    </div>
+</div>
+
+<div class="card">
+    <div class="alumno">
+        <h2>Alumno: John Doe</h2>
+    </div>
+
+    <h3 class="subtitulo">Informe</h3>
+
+    <div class="resumen">
+        <div class="indicador">
+            <span class="valor" id="horas-semana">5h</span>
+            <span class="label">Horas semana actual</span>
+        </div>
+        <div class="indicador">
+            <span class="valor" id="horas-mes">12h</span>
+            <span class="label">Horas mes actual</span>
+        </div>
+        <div class="indicador">
+            <span class="valor" id="sesiones">3 Ses</span>
+            <span class="label">Sesiones</span>
+        </div>
+    </div>
+
+    <h3 class="subtitulo">Mes abonado</h3>
+    <div class="abonado" id="abonado">
+        <span class="tag">Sí</span>
+    </div>
+</div>
+
+<div class="card botones-abajo">
+    <button class="btn-secundario btn-naranja" onclick="window.history.back()">Atrás</button>
+</div>
+
+<script src="js/informe.js"></script>
+</body>
+</html>

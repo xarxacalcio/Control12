@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center; /* Centra el contenido principal */
+    margin: 0;
+    padding: 20px; /* Añade un poco de espacio alrededor del contenido */
+    background-color: #f8f8f8; /* Color de fondo similar */
+}
+
+.container {
+    max-width: 400px; /* Ancho máximo similar al contenedor de inicio */
+    margin: 30px auto; /* Centra el contenedor horizontalmente con un poco de margen superior */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra similar */
+}
+
+input[type="text"] {
+    width: calc(100% - 22px); /* Ocupa todo el ancho del contenedor */
+    padding: 10px;
+    margin: 10px 0; /* Margen superior e inferior */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.table-container {
+    margin-top: 20px; /* Espacio entre el input y la tabla */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+#studentsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px; /* Espacio entre el borde del contenedor y la tabla */
+}
+
+#studentsTable th, #studentsTable td {
+    padding: 8px; /* Reduce el padding para un estilo más compacto */
+    border-bottom: 1px solid #eee;
+    text-align: left; /* Alinea el texto a la izquierda dentro de las celdas */
+}
+
+#studentsTable th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#studentsTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#studentsTable tbody tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+/* Estilos para la columna "Acciones" y el botón "Seleccionar" */
+#studentsTable th.actions, #studentsTable td.actions {
+    text-align: center; /* Centra el botón en la columna de acciones */
+}
+
+#studentsTable td.actions button.select-btn {
+    padding: 8px 12px;
+    background-color: #007bff; /* Color del botón similar */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+    margin: 5px; /* Añade un poco de margen alrededor del botón */
+}
+
+#studentsTable td.actions button.select-btn:hover {
+    background-color: #0056b3;
+}
+
+#logout {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    padding: 10px;
+    background-color: orange; /* Color similar al botón de inicio */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Espacio entre la tabla y el botón de logout */
+}
+
+#logout:hover {
+    background-color: #e08e00;
+}
